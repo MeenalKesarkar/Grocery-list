@@ -63,7 +63,7 @@ src/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/Grocery-list.git
+git clone https://github.com/MeenalKesarkar/Grocery-list
 ```
 
 2. Navigate to project folder:
@@ -98,14 +98,6 @@ npx json-server --watch data/db.json --port 3500
 http://localhost:3500/items
 ```
 
----
-
-## 📸 Screenshots
-
-(Add your app screenshots here for better presentation)
-
----
-
 ## 💡 Future Improvements
 
 * 🌓 Dark mode
@@ -119,7 +111,7 @@ http://localhost:3500/items
 ## 👩‍💻 Author
 
 **Meenal Kesarkar**
-Frontend Developer | MERN Stack Learner
+Frontend Developer | MERN Stack Developer
 
 ---
 
