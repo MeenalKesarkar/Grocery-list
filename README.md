@@ -1,16 +1,131 @@
-# React + Vite
+# 🛒 Grocery List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Grocery List Web Application built using React. This app allows users to manage their daily grocery items efficiently with features like adding, searching, updating, and deleting items.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+* ➕ Add new grocery items
+* 🔍 Search items in real-time
+* ✅ Mark items as completed (checkbox toggle)
+* ❌ Delete items from the list
+* 🌐 Data persistence using REST API (JSON Server / backend)
+* ⏳ Loading state handling
+* 🎯 Clean and user-friendly UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend:** React (Hooks - useState, useEffect)
+* **Styling:** CSS
+* **Icons:** React Icons
+* **Backend/API:** JSON Server / Custom API
+* **HTTP Requests:** Fetch API
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+│── components/
+│   ├── Header.js
+│   ├── Footer.js
+│   ├── AddItem.js
+│   ├── SearchItem.js
+│   ├── ItemList.js
+│   ├── LineItem.js
+│   └── Practice.js
+│
+│── App.js
+│── apiRequest.js
+│── App.css
+```
+
+---
+
+## ⚙️ How It Works
+
+* On app load, data is fetched from the API.
+* Users can:
+
+  * Add items → stored in state + API
+  * Toggle items → updates checked status via PATCH request
+  * Delete items → removed from state + API
+* Search filters items dynamically.
+
+---
+
+## 🔧 Installation & Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/Grocery-list.git
+```
+
+2. Navigate to project folder:
+
+```bash
+cd Grocery-list
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+5. Start JSON Server (if using):
+
+```bash
+npx json-server --watch data/db.json --port 3500
+```
+
+---
+
+## 🌐 API Endpoint
+
+```
+http://localhost:3500/items
+```
+
+---
+
+## 📸 Screenshots
+
+(Add your app screenshots here for better presentation)
+
+---
+
+## 💡 Future Improvements
+
+* 🌓 Dark mode
+* 📱 Mobile optimization
+* 🔐 User authentication
+* ☁️ Deploy with backend (MongoDB + Express)
+* 📊 Add categories & filters
+
+---
+
+## 👩‍💻 Author
+
+**Meenal Kesarkar**
+Frontend Developer | MERN Stack Learner
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+---
+
